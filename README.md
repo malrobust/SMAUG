@@ -6,7 +6,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/Python-3.10+-orange.svg)](https://www.python.org/)
-[![Powered by Ollama](https://img.shields.io/badge/AI-Ollama%20%2F%20Mistral-orange)](https://ollama.ai/)
+[![Powered by Ollama](https://img.shields.io/badge/AI-Ollama%20%2F%20Gemma%2030B-orange)](https://ollama.ai/)
 [![CI](https://github.com/malrobust/LIVION/actions/workflows/ci.yml/badge.svg)](https://github.com/malrobust/LIVION/actions/workflows/ci.yml)
 [![GitHub Stars](https://img.shields.io/github/stars/malrobust/LIVION?style=social)](https://github.com/malrobust/LIVION/stargazers)
 
@@ -34,7 +34,7 @@ graph TD
 | Feature | Description | Technical Stack |
 | :--- | :--- | :--- |
 | **Autonomous Reasoning** | Self-correcting logic loops that adapt to tool outputs. | Livion Engine (ReAct) |
-| **Local Intelligence** | Real-time security research and fingerprinting without external APIs. | Ollama / Mistral |
+| **Local Intelligence** | Real-time security research and fingerprinting using high-density local inference. | Ollama / Gemma 30B |
 | **Tool Orchestration** | Native execution of standard security suites (Recon, Scanning, Exploit). | Python / Subprocess |
 | **Persistent Memory** | Cross-session intelligence storage for multi-stage attacks. | ChromaDB |
 

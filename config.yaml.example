@@ -3,7 +3,7 @@
 
 # AI Model Settings
 ollama:
-  model: "llama3:latest" # Change to your preferred local model
+  model: "gemma:30b" # Google Gemma 30B (or gemma2:27b recommended)
   endpoint: "http://localhost:11434"
 
 # Memory Settings
