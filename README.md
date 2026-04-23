@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="aegis_logo.png" width="400" alt="SMAUG Logo">
+  <img src="smaug_logo.png" width="400" alt="SMAUG Logo">
 </p>
 
 # 🛡️ SMAUG: Autonomous Cyber Security Agent

@@ -1,6 +1,6 @@
-# Contributing to Sifra
+# Contributing to Smaug
 
-Thank you for your interest in improving Sifra! We welcome contributions from the community.
+Thank you for your interest in improving Smaug! We welcome contributions from the community.
 
 ## How to Contribute
 

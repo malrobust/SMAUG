@@ -1,4 +1,4 @@
-# Sifra Dependencies
+# Smaug Dependencies
 
 ollama>=0.1.0
 chromadb>=0.4.0

@@ -23,7 +23,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "sifra=main:main_loop",
+            "smaug=main:main_loop",
         ],
     },
     classifiers=[

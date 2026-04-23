@@ -24,7 +24,7 @@ from voice.listen import listen
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    filename='sifra.log',
+    filename='smaug.log',
     filemode='a'
 )
 logger = logging.getLogger("SMAUG")
