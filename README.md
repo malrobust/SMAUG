@@ -2,13 +2,13 @@
   <img src="smaug_logo.png" width="400" alt="SMAUG Logo">
 </p>
 
-# 🛡️ SMAUG: Autonomous Cyber Security Agent
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
-[![Python Version](https://img.shields.io/badge/Python-3.10+-orange.svg)](https://www.python.org/)
-[![Powered by Ollama](https://img.shields.io/badge/AI-Ollama%20%2F%20Gemma%2030B-orange)](https://ollama.ai/)
-[![CI](https://github.com/malrobust/SMAUG/actions/workflows/ci.yml/badge.svg)](https://github.com/malrobust/SMAUG/actions/workflows/ci.yml)
-[![GitHub Stars](https://img.shields.io/github/stars/malrobust/SMAUG?style=social)](https://github.com/malrobust/SMAUG/stargazers)
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-orange.svg" alt="License: MIT"></a>
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10+-orange.svg" alt="Python Version"></a>
+  <a href="https://ollama.ai/"><img src="https://img.shields.io/badge/AI-Ollama%20%2F%20Gemma%2030B-orange" alt="Powered by Ollama"></a>
+  <a href="https://github.com/malrobust/SMAUG/actions/workflows/ci.yml"><img src="https://github.com/malrobust/SMAUG/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/malrobust/SMAUG/stargazers"><img src="https://img.shields.io/github/stars/malrobust/SMAUG?style=social" alt="GitHub Stars"></a>
+</p>
 
 **Smaug** is a high-fidelity, autonomous terminal agent designed for intelligent security reconnaissance and vulnerability research. By bridging the gap between Large Language Models and offensive security tooling, Smaug reasons through complex security objectives, chains multi-stage discovery tools, and delivers real-time intelligence directly to your command center.
 
