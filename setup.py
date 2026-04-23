@@ -8,7 +8,7 @@ setup(
     description="An autonomous AI security research assistant",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/malrobust/LIVION",
+    url="https://github.com/malrobust/SMAUG",
     packages=find_packages(),
     install_requires=[
         "ollama>=0.1.0",
