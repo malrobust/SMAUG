@@ -22,23 +22,24 @@ Smaug operates on a dynamic **Reasoning-Action-Observation** loop, powered by th
 
 ```mermaid
 graph TD
-    User([User Objective]) --> Loop{Reasoning Loop}
+    User([User Objective]) --> Loop{ReAct Reasoning Loop}
     Loop --> |Think| Thought[Conceptual Strategy]
-    Loop --> |Action| Tool[Shell Execution: nmap, nuclei, sqlmap]
+    Loop --> |Action| Tool[Tool Execution]
     Loop --> |Memory| Mem[ChromaDB Vector Store]
     Tool --> Observation[Security Findings]
     Observation --> Loop
-    Loop --> |Complete| Final[Final Security Report]
+    Loop --> |Complete| Final[Deep Intelligence Report]
 ```
 
 ## ⚡ Key Capabilities
 
-| Feature | Description | Technical Stack |
+| Category | Capability | Integrated Tools |
 | :--- | :--- | :--- |
-| **Autonomous Reasoning** | Self-correcting logic loops that adapt to tool outputs. | Livion Engine (ReAct) |
-| **Local Intelligence** | Real-time security research and fingerprinting using high-density local inference. | Ollama / Gemma 30B |
-| **Tool Orchestration** | Native execution of standard security suites (Recon, Scanning, Exploit). | Python / Subprocess |
-| **Persistent Memory** | Cross-session intelligence storage for multi-stage attacks. | ChromaDB |
+| **Reconnaissance** | High-fidelity subdomain & tech discovery. | Amass, HTTPX, WhatWeb |
+| **Vulnerability Research** | Automated surface-area scanning. | Nuclei, Nmap, FFUF |
+| **Exploitation** | Managed vulnerability verification. | SQLMap, Dalfox |
+| **Memory Engine** | Persistent cross-session intelligence. | ChromaDB |
+| **Interaction** | Multi-modal terminal interface. | Voice (TTS/STT), Rich UI |
 
 ## 🚀 Getting Started
 
@@ -82,10 +83,10 @@ security:
 ```
 
 ## 🗺️ Roadmap
-- [ ] **Dockerized Environments**: Isolated execution for security tools.
-- [ ] **Multi-Model Support**: Support for GPT-4o and Claude 3.5 Sonnet.
-- [ ] **Custom Plugin System**: Enable users to write their own tool-chaining logic.
-- [ ] **Web Dashboard**: A real-time visual interface for agent logs and findings.
+- [ ] **Dockerized Tooling**: Isolated execution environments for external security binaries.
+- [ ] **Multi-Agent Swarms**: Collaborative reasoning between specialized security agents.
+- [ ] **Custom Plugin SDK**: Simplified interface for adding proprietary exploit modules.
+- [ ] **Graph Visualization**: Real-time interactive visualization of attack surface mappings.
 
 ## 🤝 Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
