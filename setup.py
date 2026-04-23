@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="drakon",
+    name="smaug",
     version="1.0.0",
     author="malrobust",
     author_email="contact@malrobust.io", # Generic placeholder or update if known

@@ -1,4 +1,4 @@
-# Drakon Configuration Template
+# Smaug Configuration Template
 # Rename this file to config.yaml and update with your settings
 
 # AI Model Settings
@@ -9,7 +9,7 @@ ollama:
 # Memory Settings
 memory:
   path: "./memory" # Local directory for storage
-  collection: "drakon_main"
+  collection: "smaug_main"
 
 # Safety Settings
 security:
