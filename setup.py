@@ -3,12 +3,12 @@ from setuptools import setup, find_packages
 setup(
     name="sifra",
     version="1.0.0",
-    author="Your Name",  # Replace with your name or GitHub handle
-    author_email="your.email@example.com",
+    author="malrobust",
+    author_email="contact@malrobust.io", # Generic placeholder or update if known
     description="An autonomous AI security research assistant",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/sifra",
+    url="https://github.com/malrobust/LIVION",
     packages=find_packages(),
     install_requires=[
         "ollama>=0.1.0",

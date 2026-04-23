@@ -16,8 +16,18 @@ from brain.planner import plan_tasks
 from brain.react import ReActEngine
 from brain.executor import ToolExecutor
 from memory.store import MemoryStore
+import logging
 from voice.speak import speak
 from voice.listen import listen
+
+# Configure Professional Logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    filename='sifra.log',
+    filemode='a'
+)
+logger = logging.getLogger("SIFRA")
 
 # Load Config
 CONFIG_PATH = "config.yaml"
@@ -28,6 +38,7 @@ console = Console()
 session = PromptSession(history=FileHistory(os.path.expanduser("~/.jarvis/history")))
 
 def print_header():
+    """Renders the professional SIFA platform header."""
     console.print(Panel.fit(
         "[bold cyan]SIFRA[/bold cyan] [white]| Autonomous Assistant & Security Researcher[/white]\n"
         "[dim]Agent: Livion | Mode: Active | Version: 1.0.0[/dim]",
@@ -35,6 +46,8 @@ def print_header():
     ))
 
 def main_loop():
+    """Main execution loop for the Sifra Autonomous Security Platform."""
+    logger.info("Initializing Sifra execution loop.")
     router = Router(model=config['ollama']['model'])
     engine = ReActEngine(model=config['ollama']['model'])
     executor = ToolExecutor()
@@ -81,6 +94,7 @@ def main_loop():
             
             mode = route_result.get("mode", "general")
             intent = route_result.get("intent", "unknown")
+            logger.info(f"Routed intent: {intent} in mode: {mode}")
             
             console.print(f"[dim][*] Mode: {mode} | Intent: {intent}[/dim]")
             
