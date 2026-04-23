@@ -2,6 +2,8 @@
   <img src="smaug_logo.png" width="400" alt="SMAUG Logo">
 </p>
 
+# <h1 align="center">🛡️ SMAUG: Autonomous Cyber Security Agent</h1>
+
 <p align="center">
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-orange.svg" alt="License: MIT"></a>
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10+-orange.svg" alt="Python Version"></a>
