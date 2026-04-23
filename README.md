@@ -7,8 +7,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/Python-3.10+-orange.svg)](https://www.python.org/)
 [![Powered by Ollama](https://img.shields.io/badge/AI-Ollama%20%2F%20Gemma%2030B-orange)](https://ollama.ai/)
-[![CI](https://github.com/malrobust/LIVION/actions/workflows/ci.yml/badge.svg)](https://github.com/malrobust/LIVION/actions/workflows/ci.yml)
-[![GitHub Stars](https://img.shields.io/github/stars/malrobust/LIVION?style=social)](https://github.com/malrobust/LIVION/stargazers)
+[![CI](https://github.com/malrobust/SMAUG/actions/workflows/ci.yml/badge.svg)](https://github.com/malrobust/SMAUG/actions/workflows/ci.yml)
+[![GitHub Stars](https://img.shields.io/github/stars/malrobust/SMAUG?style=social)](https://github.com/malrobust/SMAUG/stargazers)
 
 **Smaug** is a high-fidelity, autonomous terminal agent designed for intelligent security reconnaissance and vulnerability research. By bridging the gap between Large Language Models and offensive security tooling, Smaug reasons through complex security objectives, chains multi-stage discovery tools, and delivers real-time intelligence directly to your command center.
 
@@ -48,10 +48,10 @@ graph TD
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/malrobust/LIVION.git
+git clone https://github.com/malrobust/SMAUG.git
 
 # Navigate to project directory
-cd LIVION
+cd SMAUG
 
 # Install dependencies
 pip install -r requirements.txt
