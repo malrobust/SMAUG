@@ -1,8 +1,4 @@
-# Security Policy
-
-## Supported Versions
-
-We provide security updates for the following versions of Smaug:
+We provide security updates for the following versions of Aegis:
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -13,7 +9,7 @@ We provide security updates for the following versions of Smaug:
 
 **Do not open a public issue for security vulnerabilities.**
 
-If you discover a security vulnerability within Smaug, please report it to the Malrobust security team via the following process:
+If you discover a security vulnerability within Aegis, please report it to the Malrobust security team via the following process:
 
 1. **Email us**: Send a detailed report to `security@malrobust.io`.
 2. **Include Details**: Provide a description of the vulnerability, steps to reproduce, and a proof of concept (PoC) if available.
