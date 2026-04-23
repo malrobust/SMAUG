@@ -4,8 +4,8 @@
 
 # 🛡️ AEGIS: Autonomous Cyber Security Agent
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Python Version](https://img.shields.io/badge/Python-3.10+-green.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
+[![Python Version](https://img.shields.io/badge/Python-3.10+-orange.svg)](https://www.python.org/)
 [![Powered by Ollama](https://img.shields.io/badge/AI-Ollama%20%2F%20Mistral-orange)](https://ollama.ai/)
 [![CI](https://github.com/malrobust/LIVION/actions/workflows/ci.yml/badge.svg)](https://github.com/malrobust/LIVION/actions/workflows/ci.yml)
 [![GitHub Stars](https://img.shields.io/github/stars/malrobust/LIVION?style=social)](https://github.com/malrobust/LIVION/stargazers)

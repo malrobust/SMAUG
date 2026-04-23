@@ -40,9 +40,9 @@ session = PromptSession(history=FileHistory(os.path.expanduser("~/.jarvis/histor
 def print_header():
     """Renders the professional SIFA platform header."""
     console.print(Panel.fit(
-        "[bold cyan]AEGIS[/bold cyan] [white]| Autonomous Assistant & Security Researcher[/white]\n"
+        "[bold orange1]AEGIS[/bold orange1] [white]| Autonomous Assistant & Security Researcher[/white]\n"
         "[dim]Agent: Livion | Mode: Active | Version: 1.0.0[/dim]",
-        border_style="cyan"
+        border_style="orange1"
     ))
 
 def main_loop():
@@ -61,10 +61,9 @@ def main_loop():
 
     while True:
         try:
-            if voice_mode:
-                with console.status("[bold green]Listening...", spinner="pulse"):
-                    user_input = listen()
-                console.print(f"[bold cyan]User (Voice):[/bold cyan] {user_input}")
+            if config.get('voice_mode', False):
+                user_input = listen()
+                console.print(f"[bold orange1]User (Voice):[/bold orange1] {user_input}")
             else:
                 user_input = session.prompt("aegis > ", completer=slash_commands)
             
