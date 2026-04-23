@@ -1,6 +1,7 @@
 import sys
 import os
 import yaml
+import shutil
 from rich.console import Console
 from rich.panel import Panel
 from rich.live import Live
@@ -29,10 +30,23 @@ logging.basicConfig(
 )
 logger = logging.getLogger("SMAUG")
 
-# Load Config
-CONFIG_PATH = "config.yaml"
-with open(CONFIG_PATH, "r") as f:
-    config = yaml.safe_load(f)
+# Load configuration
+CONFIG_PATH = os.path.join(os.path.dirname(__file__), "config.yaml")
+CONFIG_EXAMPLE_PATH = os.path.join(os.path.dirname(__file__), "config.yaml.example")
+
+if not os.path.exists(CONFIG_PATH) and os.path.exists(CONFIG_EXAMPLE_PATH):
+    logger.info("Initializing config.yaml from template.")
+    shutil.copy(CONFIG_EXAMPLE_PATH, CONFIG_PATH)
+    print("\n[bold orange1][!] SMAUG First Run Detected[/bold orange1]")
+    print("[*] Automatically initializing config.yaml from template.")
+    print("[*] [bold]Recommended:[/bold] Run [cyan]python3 smaug_setup.py[/cyan] for a full system optimization.\n")
+
+try:
+    with open(CONFIG_PATH, "r") as f:
+        config = yaml.safe_load(f)
+except Exception as e:
+    logger.error(f"Failed to load configuration: {e}")
+    config = {} # Fallback
 
 console = Console()
 session = PromptSession(history=FileHistory(os.path.expanduser("~/.jarvis/history")))

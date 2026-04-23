@@ -58,8 +58,8 @@ cd SMAUG
 # Install dependencies
 pip install -r requirements.txt
 
-# Configure your environment
-cp config.yaml.example config.yaml
+# Configure your environment (Automatic)
+python3 smaug_setup.py
 ```
 
 ### Usage
