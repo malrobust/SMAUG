@@ -1,0 +1,29 @@
+# Sifra Configuration Template
+# Rename this file to config.yaml and update with your settings
+
+# AI Model Settings
+ollama:
+  model: "llama3:latest" # Change to your preferred local model
+  endpoint: "http://localhost:11434"
+
+# Memory Settings
+memory:
+  path: "./memory" # Local directory for storage
+  collection: "sifra_main"
+
+# Safety Settings
+security:
+  scope:
+    - "localhost"
+    - "127.0.0.1"
+    - "testphp.vulnweb.com" # Default test scope
+  blocked_commands:
+    - "rm -rf /"
+    - "mkfs"
+    - "chmod -R 777 /"
+
+# Interface Settings
+ui:
+  theme: "monokai"
+  voice_enabled: false # Set to true to enable voice interactions
+  thinking_indicator: true
