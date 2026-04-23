@@ -2,7 +2,7 @@
   <img src="smaug_logo.png" width="400" alt="SMAUG Logo">
 </p>
 
-# <h1 align="center">🛡️ SMAUG: Autonomous Cyber Security Agent</h1>
+# <h1 align="center">🛡️ SMAUG: Autonomous Security platform</h1>
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-orange.svg" alt="License: MIT"></a>
@@ -12,93 +12,65 @@
   <a href="https://github.com/malrobust/SMAUG/stargazers"><img src="https://img.shields.io/github/stars/malrobust/SMAUG?style=social" alt="GitHub Stars"></a>
 </p>
 
-**Smaug** is a high-fidelity, autonomous terminal agent designed for intelligent security reconnaissance and vulnerability research. By bridging the gap between Large Language Models and offensive security tooling, Smaug reasons through complex security objectives, chains multi-stage discovery tools, and delivers real-time intelligence directly to your command center.
-
----
+**Smaug** is a terminal-based autonomous security researcher. It uses Local LLMs to reason through security objectives and orchestrate specialized tools to identify and report vulnerabilities.
 
 ## 🏛️ Core Architecture
 
-Smaug operates on a dynamic **Reasoning-Action-Observation** loop, powered by the **Livion Autonomous Engine** and Local LLMs.
+Smaug operates on a **Reasoning-Action-Observation** loop (ReAct), powered by the **Livion Engine**.
 
 ```mermaid
 graph TD
-    User([User Objective]) --> Loop{ReAct Reasoning Loop}
+    User([User Objective]) --> Loop{Reasoning Loop}
     Loop --> |Think| Thought[Conceptual Strategy]
     Loop --> |Action| Tool[Tool Execution]
     Loop --> |Memory| Mem[ChromaDB Vector Store]
     Tool --> Observation[Security Findings]
     Observation --> Loop
-    Loop --> |Complete| Final[Deep Intelligence Report]
+    Loop --> |Complete| Final[Security Report]
 ```
 
-## ⚡ Key Capabilities
+## ⚡ Integrated Capabilities
 
-| Category | Capability | Integrated Tools |
+| Category | Capability | Tools |
 | :--- | :--- | :--- |
-| **Reconnaissance** | High-fidelity subdomain & tech discovery. | Amass, HTTPX, WhatWeb |
-| **Vulnerability Research** | Automated surface-area scanning. | Nuclei, Nmap, FFUF |
-| **Exploitation** | Managed vulnerability verification. | SQLMap, Dalfox |
-| **Memory Engine** | Persistent cross-session intelligence. | ChromaDB |
-| **Interaction** | Multi-modal terminal interface. | Voice (TTS/STT), Rich UI |
+| **Intelligence** | Subdomain & Tech Discovery | Amass, HTTPX, WhatWeb |
+| **Scanning** | Port & Vulnerability Analysis | Nmap, Nuclei, FFUF |
+| **Exploitation** | Managed Vulnerability Checks | SQLMap, Dalfox |
+| **Memory** | Semantic Search Persistence | ChromaDB |
+| **Execution** | System & Shell Control | Subprocess, File I/O |
 
-## 🚀 Getting Started
+## 🚀 Installation & Setup
 
 ### Prerequisites
-- Python 3.10 or higher
-- [Ollama](https://ollama.ai/) (Running Version 0.1.30+)
-- [Optional] `pyaudio` for Voice Mode
+- Python 3.10+
+- [Ollama](https://ollama.ai/)
 
-### Installation
+### Setup
 ```bash
-# Clone the repository
 git clone https://github.com/malrobust/SMAUG.git
-
-# Navigate to project directory
 cd SMAUG
-
-# Install dependencies
 pip install -r requirements.txt
-
-# Configure your environment (Automatic)
 python3 smaug_setup.py
 ```
 
 ### Usage
-Launch the agent with a high-level security objective:
 ```bash
 python3 main.py
 ```
-Or use the prompt once inside:
-`smaug > perform a stealthy recon on dev-staging.local and report any exposed SQL services`
+**Example Objective**: `smaug > audit testphp.vulnweb.com for SQL vulnerabilities and generate a report`
 
-## 🛠️ Configuration
-Edit `config.yaml` to define your operational boundaries:
+## 🛠️ Operational Scope
+Security boundaries are enforced in `config.yaml`:
 ```yaml
 security:
   scope:
-    - "localhost"
     - "testphp.vulnweb.com"
   blocked_commands:
     - "rm -rf /"
 ```
 
-## 🗺️ Roadmap
-- [ ] **Dockerized Tooling**: Isolated execution environments for external security binaries.
-- [ ] **Multi-Agent Swarms**: Collaborative reasoning between specialized security agents.
-- [ ] **Custom Plugin SDK**: Simplified interface for adding proprietary exploit modules.
-- [ ] **Graph Visualization**: Real-time interactive visualization of attack surface mappings.
-
-## 🤝 Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## 📜 License
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-**Disclaimer**: Smaug is for educational and ethical security research purposes only. Unauthorized access to computer systems is illegal. Always obtain explicit permission before testing.
+**Disclaimer**: Smaug is for authorized security research only. Unauthorized testing is illegal.
