@@ -27,7 +27,7 @@ logging.basicConfig(
     filename='sifra.log',
     filemode='a'
 )
-logger = logging.getLogger("SIFRA")
+logger = logging.getLogger("DRAKON")
 
 # Load Config
 CONFIG_PATH = "config.yaml"
@@ -40,14 +40,14 @@ session = PromptSession(history=FileHistory(os.path.expanduser("~/.jarvis/histor
 def print_header():
     """Renders the professional SIFA platform header."""
     console.print(Panel.fit(
-        "[bold cyan]SIFRA[/bold cyan] [white]| Autonomous Assistant & Security Researcher[/white]\n"
+        "[bold cyan]DRAKON[/bold cyan] [white]| Autonomous Assistant & Security Researcher[/white]\n"
         "[dim]Agent: Livion | Mode: Active | Version: 1.0.0[/dim]",
         border_style="cyan"
     ))
 
 def main_loop():
-    """Main execution loop for the Sifra Autonomous Security Platform."""
-    logger.info("Initializing Sifra execution loop.")
+    """Main execution loop for the Drakon Autonomous Security Platform."""
+    logger.info("Initializing Drakon execution loop.")
     router = Router(model=config['ollama']['model'])
     engine = ReActEngine(model=config['ollama']['model'])
     executor = ToolExecutor()
@@ -66,7 +66,7 @@ def main_loop():
                     user_input = listen()
                 console.print(f"[bold cyan]User (Voice):[/bold cyan] {user_input}")
             else:
-                user_input = session.prompt("sifra > ", completer=slash_commands)
+                user_input = session.prompt("drakon > ", completer=slash_commands)
             
             if not user_input.strip():
                 continue

@@ -1,4 +1,4 @@
-# Sifra Configuration Template
+# Drakon Configuration Template
 # Rename this file to config.yaml and update with your settings
 
 # AI Model Settings
@@ -9,7 +9,7 @@ ollama:
 # Memory Settings
 memory:
   path: "./memory" # Local directory for storage
-  collection: "sifra_main"
+  collection: "drakon_main"
 
 # Safety Settings
 security:

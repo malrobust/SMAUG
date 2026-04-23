@@ -1,10 +1,10 @@
-# SIFRA | The Autonomous Security Operations Platform 🚀
+# DRAKON | The Autonomous Security Operations Platform 🚀
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Stability: Production](https://img.shields.io/badge/Stability-Production--Ready-green.svg?style=for-the-badge)](https://github.com/malrobust/LIVION)
 [![Vulnerability Discovery](https://img.shields.io/badge/Domain-SecOps-blue.svg?style=for-the-badge)](https://github.com/malrobust/LIVION)
 
-**SIFRA** is an enterprise-grade autonomous security orchestration platform designed to automate the lifecycle of vulnerability research, penetration testing, and system auditing. Built on the **Livion Autonomous Engine**, Sifra leverages private local LLMs to deliver high-fidelity security insights while ensuring absolute data sovereignty.
+**DRAKON** is an enterprise-grade autonomous security orchestration platform designed to automate the lifecycle of vulnerability research, penetration testing, and system auditing. Built on the **Livion Autonomous Engine**, Drakon leverages private local LLMs to deliver high-fidelity security insights while ensuring absolute data sovereignty.
 
 ---
 
@@ -17,13 +17,13 @@ A state-of-the-art Reasoning-Action engine that autonomously plans, executes, an
 Execute complex security workflows entirely on-premise. No APIs, no data leaks, no third-party dependencies for intelligence.
 
 ### ⚡ Parallel Security Orchestration
-Scale your security operations with multi-threaded task decomposition. Sifra breaks down high-level objectives into surgical executions.
+Scale your security operations with multi-threaded task decomposition. Drakon breaks down high-level objectives into surgical executions.
 
 ### 🎙️ Multi-Modal Interface
 Interact via a premium CLI or go hands-free with real-time neural speech synthesis and recognition.
 
 ### 🧩 Extensible Tool Architecture
-Easily integrate custom exploit modules, network scanners, and reporting engines into the unified Sifra framework.
+Easily integrate custom exploit modules, network scanners, and reporting engines into the unified Drakon framework.
 
 ---
 
@@ -60,7 +60,7 @@ python3 main.py
 
 ```mermaid
 graph TD
-    User((Security Researcher)) --> CLI[Sifra Terminal UI]
+    User((Security Researcher)) --> CLI[Drakon Terminal UI]
     CLI --> Router[Intent Router]
     Router --> Planner[Task Orchestrator]
     Planner --> Livion[Livion ReAct Engine]
@@ -74,19 +74,19 @@ graph TD
 
 ## 🔒 Security & Compliance
 
-Sifra is designed for professional security audits. By using this platform, you agree to the **Malrobust Security Ethics Agreement**. 
+Drakon is designed for professional security audits. By using this platform, you agree to the **Malrobust Security Ethics Agreement**. 
 
 - **Internal Safety Scope**: Hardcoded operational boundaries in `config.yaml`.
 - **Command Sanitization**: Real-time filtering of destructive system commands.
 - **Privacy**: Zero external telemetry.
 
-For vulnerability disclosure regarding Sifra itself, please see [SECURITY.md](SECURITY.md).
+For vulnerability disclosure regarding Drakon itself, please see [SECURITY.md](SECURITY.md).
 
 ---
 
 ## 🏢 About Malrobust
 
-Sifra is a flagship product of **Malrobust**, dedicated to advancing autonomous security technologies. Learn more at [github.com/malrobust](https://github.com/malrobust).
+Drakon is a flagship product of **Malrobust**, dedicated to advancing autonomous security technologies. Learn more at [github.com/malrobust](https://github.com/malrobust).
 
 ---
 
