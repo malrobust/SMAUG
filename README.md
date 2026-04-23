@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="aegis_logo.png" width="400" alt="AEGIS Logo">
+  <img src="aegis_logo.png" width="400" alt="SMAUG Logo">
 </p>
 
-# 🛡️ AEGIS: Autonomous Cyber Security Agent
+# 🛡️ SMAUG: Autonomous Cyber Security Agent
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/Python-3.10+-orange.svg)](https://www.python.org/)
@@ -10,13 +10,13 @@
 [![CI](https://github.com/malrobust/LIVION/actions/workflows/ci.yml/badge.svg)](https://github.com/malrobust/LIVION/actions/workflows/ci.yml)
 [![GitHub Stars](https://img.shields.io/github/stars/malrobust/LIVION?style=social)](https://github.com/malrobust/LIVION/stargazers)
 
-**Aegis** is a high-fidelity, autonomous terminal agent designed for intelligent security reconnaissance and vulnerability research. By bridging the gap between Large Language Models and offensive security tooling, Aegis reasons through complex security objectives, chains multi-stage discovery tools, and delivers real-time intelligence directly to your command center.
+**Smaug** is a high-fidelity, autonomous terminal agent designed for intelligent security reconnaissance and vulnerability research. By bridging the gap between Large Language Models and offensive security tooling, Smaug reasons through complex security objectives, chains multi-stage discovery tools, and delivers real-time intelligence directly to your command center.
 
 ---
 
 ## 🏛️ Core Architecture
 
-Aegis operates on a dynamic **Reasoning-Action-Observation** loop, powered by the **Livion Autonomous Engine** and Local LLMs.
+Smaug operates on a dynamic **Reasoning-Action-Observation** loop, powered by the **Livion Autonomous Engine** and Local LLMs.
 
 ```mermaid
 graph TD
@@ -66,7 +66,7 @@ Launch the agent with a high-level security objective:
 python3 main.py
 ```
 Or use the prompt once inside:
-`aegis > perform a stealthy recon on dev-staging.local and report any exposed SQL services`
+`smaug > perform a stealthy recon on dev-staging.local and report any exposed SQL services`
 
 ## 🛠️ Configuration
 Edit `config.yaml` to define your operational boundaries:
@@ -98,4 +98,4 @@ Contributions are what make the open-source community such an amazing place to l
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-**Disclaimer**: Aegis is for educational and ethical security research purposes only. Unauthorized access to computer systems is illegal. Always obtain explicit permission before testing.
+**Disclaimer**: Smaug is for educational and ethical security research purposes only. Unauthorized access to computer systems is illegal. Always obtain explicit permission before testing.

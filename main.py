@@ -27,7 +27,7 @@ logging.basicConfig(
     filename='sifra.log',
     filemode='a'
 )
-logger = logging.getLogger("AEGIS")
+logger = logging.getLogger("SMAUG")
 
 # Load Config
 CONFIG_PATH = "config.yaml"
@@ -40,14 +40,14 @@ session = PromptSession(history=FileHistory(os.path.expanduser("~/.jarvis/histor
 def print_header():
     """Renders the professional SIFA platform header."""
     console.print(Panel.fit(
-        "[bold orange1]AEGIS[/bold orange1] [white]| Autonomous Assistant & Security Researcher[/white]\n"
+        "[bold orange1]SMAUG[/bold orange1] [white]| Autonomous Assistant & Security Researcher[/white]\n"
         "[dim]Agent: Livion | Mode: Active | Version: 1.0.0[/dim]",
         border_style="orange1"
     ))
 
 def main_loop():
-    """Main execution loop for the Aegis Autonomous Security Platform."""
-    logger.info("Initializing Aegis execution loop.")
+    """Main execution loop for the Smaug Autonomous Security Platform."""
+    logger.info("Initializing Smaug execution loop.")
     router = Router(model=config['ollama']['model'])
     engine = ReActEngine(model=config['ollama']['model'])
     executor = ToolExecutor()
@@ -65,7 +65,7 @@ def main_loop():
                 user_input = listen()
                 console.print(f"[bold orange1]User (Voice):[/bold orange1] {user_input}")
             else:
-                user_input = session.prompt("aegis > ", completer=slash_commands)
+                user_input = session.prompt("smaug > ", completer=slash_commands)
             
             if not user_input.strip():
                 continue
